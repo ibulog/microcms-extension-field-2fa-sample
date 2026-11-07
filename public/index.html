@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="microcms-origin" content="__MICROCMS_ORIGIN__">
+  <title>2要素認証の設定状況</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main id="card" class="card" data-state="loading" aria-busy="true">
+    <div class="heading"><span class="mark" aria-hidden="true">●</span><h1>2要素認証</h1></div>
+    <div role="status" aria-live="polite" aria-atomic="true">
+      <p id="message" class="message">ログインユーザーを確認しています…</p>
+      <p id="description" class="description">設定状況を取得するまでお待ちください。</p>
+    </div>
+    <a id="guide" href="https://document.microcms.io/manual/mfa-setting" target="_blank" rel="noopener noreferrer" hidden>2要素認証の設定方法を見る <span aria-hidden="true">↗</span><span class="sr-only">（新しいタブで開きます）</span></a>
+    <div class="footer"><p id="checked-at" class="checked-at"></p><button id="retry" type="button" disabled>再確認</button></div>
+    <noscript>設定状況を確認するにはJavaScriptを有効にしてください。</noscript>
+  </main>
+</body>
+</html>
