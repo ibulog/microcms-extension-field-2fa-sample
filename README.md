@@ -1,0 +1,2 @@
+# microcms-extension-field-2fa-sample
+microCMSの拡張フィールドでログインユーザーの2要素認証設定状況を表示するTypeScriptアプリ
